@@ -1,0 +1,20 @@
+//--------------------------------------------------------- 
+// LIFECYCLE MANAGER 
+//---------------------------------------------------------
+
+bundles:
+{
+    file:
+    {
+        [x] $LE_BIN_DIR/lifecyclemgr /bin/lifecycle
+
+    }
+}
+
+provides:
+{
+    api:
+    {
+        lifecycle =  $LEGATO_MM_API/lifecycle.api
+    }
+}
